@@ -1,0 +1,18 @@
+<br><br>
+<div class="container">
+  <form action="" (ngSubmit)="processForm()">
+    <div class="form group" *ngIf="user.id">
+        <label for="id" >Id</label>
+      <input type="text" name="id"  class="form-control" [(ngModel)]="user.id">
+    </div>
+    <div class="form group">
+      <label for="fname" >First Name</label>
+      <input type="text" name="fname"  class="form-control" [(ngModel)]="user.fname">
+    </div>
+    <div class="form group">
+        <label for="lname" >First Name</label>
+        <input type="text" name="lname"  class="form-control" [(ngModel)]="user.lname">
+      </div>
+      <input type="submit" value="Save" class="btn btn-success">
+  </form>
+</div>
